@@ -1,0 +1,86 @@
+/*Heading*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.header{
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    position:sticky;
+}
+
+.title{
+    color: white;
+}
+
+.structs li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.structs li a{
+    color: white;
+    margin: 0 50px;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: grey;
+    transition: .5s;
+}
+/*Stack Section*/
+.stack{
+    margin: 25px;
+}
+
+.Scommand{
+    margin-top: 25px;
+}
+
+.stack p{
+    float: left;
+}
+
+.stackActs li {
+    margin-left: 150px;
+    display:inline-block;
+    margin-bottom: 75px;
+    text-align:center;
+    color:black;
+    font-size: 25px;
+}
+
+.stackActs li:hover{
+    background-color: grey;
+    transition: .5s;
+}
+
+.rectangle{
+    margin-left:600px;
+    height: 50px;
+    width: 250px;
+    border-color: black;
+    background-color: black;
+
+}
+
+.inputDiv{
+    text-align:center;
+}
+.inputBox{
+    text-align:center;
+    margin-bottom: 75px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.boxValue{
+    padding: 10px;
+    text-align:center;
+    color: white;
+}
+
+

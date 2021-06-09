@@ -11,29 +11,62 @@
     <div class = 'header'>
         <h1 class = 'title'>Data Structures</h1>
         <ul class = 'structs'>
-            <li> <a href = #default> Stack</a></li>
+            <li> <a href = #stack> Stack</a></li>
             <li> <a href = #default> Queue</a></li>
             <li> <a href = #default> LinkedList</a></li>
         </ul>
     </div>
-    <div class = 'stack'>
-        <h2 style = 'text-align: left;' >Stack</h2>
-        <p> An abstract data type that serves as a collection of elements,
-             <br>with two main principal operations: Push, which adds an element <br>to the collection, and Pop, which
-              removes the most recently added element <br> that was not yet removed.</p>
-        <div class = stackActs>
-            <ul>
-                <li><a href="#default"></a>Push</li>
-                <li><a href="#default"></a>Pop</li>
-                <li><a href="#default"></a>Peek</li>
-            </ul>
-        </div>
-        <div class = 'inputDiv'>
-            <input type="text" id = 'inputBox' placeholder = 'Next value'>
-        </div>
+    <!--STACK SECTION-->
+    <div class = 'divStack'>
+    <div class = 'stack' style = 'text-align: center;'>
+        <h2>Stack</h2>
+        <p> An abstract data type that serves as a collection of elements
+             <br>which utilizes the first-in last-out <bold>(FILO)</bold> method. It consist of three main operations; Push: adds an element <br>to the collection, Pop:
+              removes the most recently added element <br> that was not yet removed, and peek: returns the value at the last element.</p>
     </div>
-    <div class = 'rectangle'>
-        <h3 class = 'boxValue'>Text</h3>
+    <br>
+    <div class = 'inputDiv'>
+            <input type="text" id = 'inputBox' placeholder = 'Next value'>
+            <button id = 'inputButton' onclick = "javascript: push(document.getElementById('inputBox').value)"> Enter</button>
+    </div>
+    <br>
+    <div class = stackActs>
+        <ul>
+            <li onclick = "javascript: push(document.getElementById('inputBox').value)"><button></a>Push</li>
+            <li onclick = "javascript: pop()"><button></a>Pop</li>
+            <li onclick = "javascript: peek()"><button></a>Peek</li>
+        </ul>
+    </div>
+    <div class = 'items' id = 'items'>
+        <ol type = "1" id = 'stkLst'>
+        </ol>
+    </div>
+    <div class = 'poppedVal' id = poppedVal>
+        <h3 id = 'popped'></h3>
+    </div>
+    </div>
+    <!--LINKEDLIST SECTION-->
+    <div class = 'LLHeader'>
+        <h2>LinkedList</h2>
+        <p>*Definition Goes Here*</p>
+    </div>
+    <div class = 'LLInputSect'>
+        <input id = 'LLValue' type="text" placeholder="Value">
+        <input id = 'LLPosition' type='text' placeholder = 'Position. Ex: null'>
+        <button id = 'LLInputButton' class = 'LLInputButton' onclick = "javascript: append(document.getElementById('LLPosition').value,document.getElementById('LLValue').value)">Enter</button>
+    </div>
+    
+    <div class = 'LLFunctions'>
+        <button onclick = "javascript: append(document.getElementById('LLPosition').value,document.getElementById('LLValue').value)"> Append</button>
+        <button onclick = "javascript: remove(document.getElementById('LLValue').value)"> Remove</button>
+        <button onclick = "javascript: count()"> Count</button>
+        <button onclick = "javavscript: findKey(document.getElementById('LLValue').value)"> Find</button>
+    </div>
+    <div class = 'LLItems' id = 'LLItems'>
+        <!--VALUES WILL BE INSERTED THROUGH JS-->
+    </div>
+    <div class = LLOutputDiv>
+        <h3 class = 'LLOutput' id = 'LLOutput'>hello</h3>
     </div>
     <script src = 'DS.js'></script>
 </body>

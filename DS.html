@@ -11,9 +11,8 @@
     <div class = 'header'>
         <h1 class = 'title'>Data Structures</h1>
         <ul class = 'structs'>
-            <li> <a href = #stack> Stack</a></li>
-            <li> <a href = #default> Queue</a></li>
-            <li> <a href = #default> LinkedList</a></li>
+            <li> <a onclick = "javascript: ScrollToStack()"> Stack</a></li>
+            <li> <a onclick = "javascript: ScrollToLL()"> LinkedList</a></li>
         </ul>
     </div>
     <!--STACK SECTION-->
@@ -21,8 +20,8 @@
     <div class = 'stack' style = 'text-align: center;'>
         <h2>Stack</h2>
         <p> An abstract data type that serves as a collection of elements
-             <br>which utilizes the first-in last-out <bold>(FILO)</bold> method. It consist of three main operations; Push: adds an element <br>to the collection, Pop:
-              removes the most recently added element <br> that was not yet removed, and peek: returns the value at the last element.</p>
+             which utilizes the first-in last-out <bold>(FILO)</bold> method. It consist of three main operations; Push: adds an element to the collection, Pop:
+              removes the most recently added element that was not yet removed, and peek: returns the value at the last element.</p>
     </div>
     <br>
     <div class = 'inputDiv'>
@@ -45,11 +44,15 @@
         <h3 id = 'popped'></h3>
     </div>
     </div>
+    <img id = 'DataStructsImg'src="https://miro.medium.com/max/700/1*KpDOKMFAgDWaGTQHL0r70g.png" alt="DataStructsPicture">
     <!--LINKEDLIST SECTION-->
     <div class = 'LLHeader'>
         <h2>LinkedList</h2>
-        <p>*Definition Goes Here*</p>
-    </div>
+        <div class = 'LLPara'>
+            <p>In computer science, a linked list is a linear collection of data elements whose order is not given by their physical placement in memory. 
+                Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence.</p>
+        </div>
+        </div>
     <div class = 'LLInputSect'>
         <input id = 'LLValue' type="text" placeholder="Value">
         <input id = 'LLPosition' type='text' placeholder = 'Position. Ex: null'>
@@ -66,7 +69,7 @@
         <!--VALUES WILL BE INSERTED THROUGH JS-->
     </div>
     <div class = LLOutputDiv>
-        <h3 class = 'LLOutput' id = 'LLOutput'>hello</h3>
+        <h3 class = 'LLOutput' id = 'LLOutput'></h3>
     </div>
     <script src = 'DS.js'></script>
 </body>

@@ -173,3 +173,17 @@ function findKey(value){
     if(found == false)
         document.getElementById('LLOutput').innerHTML = 'Index: null';
 }
+
+function ScrollToStack(){
+    window.scroll({
+        top: 0, 
+        behavior: 'smooth'
+      });
+}
+
+function ScrollToLL(){
+    window.scroll({
+        top: 2500, 
+        behavior: 'smooth'
+      });
+}
